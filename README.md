@@ -17,22 +17,27 @@ Insult Master is a fun application that generates random insults using the "Evil
 Install the dependencies:
 npm install
 
-2.Start the React application:
+2. Start the React application:
    ```bash
    npm start
    Backend
    ```
 
 3. Navigate to the backend directory:
-cd backend
+   ```bash
+   cd backend
 
-Install the dependencies:
-npm install
+4. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
-Start the Node.js server:
-node server.js
+5. Start the Node.js server:
+   ```bash
+   node server.js
+   ```
+
 Usage
-
 Open your browser and navigate to http://localhost:3000 to see the Insult Master in action.
 Click on "Generate Insult" to fetch a random insult and display it on the screen.
 Built With
