@@ -22,8 +22,24 @@ app.get('/api/insult', async (req, res) => {
   }
 });
 
-//Adding another router
-
+app.get('/api/llama-response', async (req, res) => {
+    try {
+      const response = await axios.post(
+        'https://api-inference.huggingface.co/models/meta/llama', 
+        { inputs: 'Generate a response to this insult.' }, 
+        {
+          headers: {
+            Authorization: `Bearer ${HUGGING_FACE_API_KEY}`,
+            'Content-Type': 'application/json',
+          },
+        }
+      );
+      res.json(response.data);
+    } catch (error) {
+      console.error('Error fetching LLaMA response:', error);
+      res.status(500).json({ error: 'Failed to fetch LLaMA response' });
+    }
+  });
 
 // Start the server
 app.listen(PORT, () => {
