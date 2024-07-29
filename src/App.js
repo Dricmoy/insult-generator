@@ -1,9 +1,11 @@
-import './App.css';
+// src/App.js
+import React from 'react';
+import InsultGen from './InsultGen';
 
 function App() {
   return (
     <div className="App">
-      <InsultGen></InsultGen>
+      <InsultGen />
     </div>
   );
 }

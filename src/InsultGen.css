@@ -1,0 +1,31 @@
+/* src/InsultGen.css */
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .generate-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .generate-button:disabled {
+    background-color: #6c757d;
+  }
+  
+  .insult-text {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
